@@ -72,23 +72,23 @@ Permissions:
 
 Trust relationships
 
-{
-"Version": "2012-10-17",
-"Statement": [
-{
-"Effect": "Allow",
-"Principal": {
-"Service": "elasticbeanstalk.amazonaws.com"
-},
-"Action": "sts:AssumeRole",
-"Condition": {
-"StringEquals": {
-"sts:ExternalId": "elasticbeanstalk"
-}
-}
-}
-]
-}
+>{
+>"Version": "2012-10-17",
+>"Statement": [
+>{
+>"Effect": "Allow",
+>"Principal": {
+>"Service": "elasticbeanstalk.amazonaws.com"
+>},
+>"Action": "sts:AssumeRole",
+>"Condition": {
+>"StringEquals": {
+>"sts:ExternalId": "elasticbeanstalk"
+>}
+>}
+>}
+>]
+>}
 
 
 EC2 key pair: Provide Key Pair
@@ -114,21 +114,21 @@ Select trusted entities
 
 Trust relationships
 
-{
-"Version": "2012-10-17",
-"Statement": [
-{
-"Effect": "Allow",
-"Action": [
-"sts:AssumeRole"
-],
-"Principal": {
-"Service": [
-"ec2.amazonaws.com"
-]
-}
-}
-]
+>{
+>"Version": "2012-10-17",
+>"Statement": [
+>{
+>"Effect": "Allow",
+>"Action": [
+>"sts:AssumeRole"
+>],
+>"Principal": {
+>"Service": [
+>"ec2.amazonaws.com"
+>]
+>}
+>}
+>]
 }
 
 
@@ -274,18 +274,18 @@ tcb-admin@tcb.com
 Checking EC2, LB, TG, AutoScaling, Elastic Beanstalk health/status
 
 ► Accessing and installing 'Stress' tool in the EC2:
-ssh -i <key.pem> ec2-user@ip<instance>
+>ssh -i <key.pem> ec2-user@ip<instance>
 
 Installing and running “Stress” tool
-sudo yum install stress -y
-stress -c 4
+>sudo yum install stress -y
+>stress -c 4
 
 Checking Elastic Beanstalk status | 'Warning'
 
 Let’s open a new SSH connection and check the process running in the EC2 instance:
-ps aux
-ps aux --sort=-pcpu
-top
+>ps aux
+>ps aux --sort=-pcpu
+>top
 
 Some cases that justify an increase in CPU consumption:
 
