@@ -1,2 +1,2 @@
-# AWS: *CloudFront, AUTO SCALING, CLOUDWATCH, ELASTIC BEANSTALK*
+# AWS: *CloudFront, Auto Scaling, Cloudwatch, Elastic Beanstalk*
 
