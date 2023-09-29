@@ -1,5 +1,6 @@
-# AWS Project:
-## *CloudFront, Auto Scaling, Cloudwatch, Elastic Beanstalk*
+# Autoscaling using AWS CloudFront, CloudWatch & Elastic Beanstalk
+
+## AWS Services used *CloudFront, Auto Scaling, Cloudwatch, Elastic Beanstalk*
 
 In this project, we are going to make an application that needs to support the high demand of a large number of users accessing it simultaneously. This application will be used in a conference for participants from all over the world to fill out their emails to be shortlisted in a raffle to win a $50 VISA gift card. 
 To provide the requirement, we are going to use Amazon Elastic Beanstalk to deploy a web application and Amazon DynamoDB to the email list. We shall also use Amazon CloudFront to cache static and dynamic files to different Edge Locations to decrease latency when this application is accessed by users at various locations around the world. 
